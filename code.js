@@ -561,7 +561,6 @@ bot.on('message', async message => {
       .setDescription(`The following commands can be ran by: *everyone*.`)
       .addField(`**\`${prefix}verify\`**`, `Associates a user's ROBLOX account with their Discord account through verification procedures.`)
       .addField(`**\`${prefix}profile username1\`**`, `Displays ${xpName} information about the given username (\`username1\`).`)
-      .addField(`**\`${prefix}prefix\`**`, `Returns the current prefix set for the group.`)
       .addField(`**\`${prefix}help\`**`, `Displays this menu`)
     await message.author.send(first)
     var second = new Discord.RichEmbed()
