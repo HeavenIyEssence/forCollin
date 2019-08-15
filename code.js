@@ -560,7 +560,7 @@ bot.on('message', async message => {
       .setTitle(`__Member Commands__`)
       .setDescription(`The following commands can be ran by: *everyone*.`)
       .addField(`**\`${prefix}verify\`**`, `Associates a user's ROBLOX account with their Discord account through verification procedures.`)
-      .addField(`**\`${prefix}view username1\`**`, `Views ${xpName} information about the given username (\`username1\`).`)
+      .addField(`**\`${prefix}profile username1\`**`, `Displays ${xpName} information about the given username (\`username1\`).`)
       .addField(`**\`${prefix}prefix\`**`, `Returns the current prefix set for the group.`)
       .addField(`**\`${prefix}help\`**`, `Displays this menu`)
     await message.author.send(first)
