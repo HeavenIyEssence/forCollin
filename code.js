@@ -1,5 +1,5 @@
 /* SETTINGS START */
-const prefix = ":"
+const prefix = ":";
 const groupID = 2835927;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
