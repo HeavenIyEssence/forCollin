@@ -554,7 +554,7 @@ bot.on('message', async message => {
 
   }
 
-  if (message.content.toLowerCase().startsWith(`${prefix}commands`)){
+  if (message.content.toLowerCase().startsWith(`${prefix}help`)){
     var first = new Discord.RichEmbed()
       .setColor(0x1279ff)
       .setTitle(`__Member Commands__`)
@@ -562,7 +562,7 @@ bot.on('message', async message => {
       .addField(`**\`${prefix}verify\`**`, `Associates a user's ROBLOX account with their Discord account through verification procedures.`)
       .addField(`**\`${prefix}view username1\`**`, `Views ${xpName} information about the given username (\`username1\`).`)
       .addField(`**\`${prefix}prefix\`**`, `Returns the current prefix set for the group.`)
-      .addField(`**\`${prefix}commands\`**`, `Displays this menu`)
+      .addField(`**\`${prefix}help\`**`, `Displays this menu`)
     await message.author.send(first)
     var second = new Discord.RichEmbed()
       .setColor(0xff6b4a)
