@@ -61,7 +61,7 @@ bot.on('message', async message => {
     }
 
     if (!verifiedRole){
-      return message.channel.send(`Sorry ${message.author}, but this guild is missing the \`Verified\` role!\n**Please contact someone to add the role!**`);
+      return message.channel.send(`Sorry ${message.author}, but this group is missing the \`Verified\` role!\n**Please contact someone to add the role!**`);
     }
 
     if (message.member.roles.exists("name", "Verified")){
@@ -383,7 +383,7 @@ bot.on('message', async message => {
 
   if (message.content.toLowerCase().startsWith(`${prefix}setup`)){
     if (message.author.id !== message.guild.owner.id){
-      return message.channel.send(`Sorry ${message.author}, but only the guild owner (${message.guild.owner}) can run that command!`);
+      return message.channel.send(`Sorry ${message.author}, but only the Crown (${message.guild.owner}) can run that command!`);
     }
     if (groupID === 0){
       return message.channel.send(`Sorry ${message.author}, but I'm missing the group's ID--which can be entered in the config.json file.`);
