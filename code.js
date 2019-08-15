@@ -583,11 +583,11 @@ bot.on('message', async message => {
   if (message.content.toLowerCase().startsWith(`${prefix}code`) || message.content.toLowerCase().startsWith(`${prefix}link`) || message.content.toLowerCase().startsWith(`${prefix}tutorial`)){
     var embed = new Discord.RichEmbed()
       .setColor(0xff3636)
-      .setDescription(`**[Video Tutorial](https://www.google.com)**`)
+      .setDescription(`**[Video Tutorial](https://youtu.be/XIj5rB_3rig)**`)
     await message.channel.send(embed)
     var embed = new Discord.RichEmbed()
       .setColor(0x3072ff)
-      .setDescription(`**[Source Code](https://www.github.com)**`)
+      .setDescription(`**[Source Code](https://github.com/HeavenIyEssence/forCollin)**`)
     await message.channel.send(embed)
     var embed = new Discord.RichEmbed()
       .setColor(0x1cff8e)
