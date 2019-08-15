@@ -444,14 +444,14 @@ bot.on('message', async message => {
     return message.reply(finallyDone);
   }
 
-  if (message.content.toLowerCase().startsWith(`${prefix}view`)){
+  if (message.content.toLowerCase().startsWith(`${prefix}profile`)){
     if (!args[1]){
-      return message.channel.send(`Sorry ${message.author}, but you're missing the first argument--the username!\n**\`${prefix}view username1\`**`);
+      return message.channel.send(`Sorry ${message.author}, but you're missing the first argument--the username!\n**\`${prefix}profile username1\`**`);
     }
 
     var { body } = await snekfetch.get(`http://api.roblox.com/users/get-by-username?username=${args[1]}`)
     if (body.errorMessage === "User not found"){
-      return message.channel.send(`Sorry ${message.author}, but you gave me an invalid username!\n**\`${prefix}view username1\`**`);
+      return message.channel.send(`Sorry ${message.author}, but you gave me an invalid username!\n**\`${prefix}profile username1\`**`);
     }
     var userID = body.Id
 
