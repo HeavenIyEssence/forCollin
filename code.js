@@ -561,7 +561,7 @@ bot.on('message', async message => {
       .setDescription(`The following commands can be ran by: *everyone*.`)
       .addField(`**\`${prefix}verify\`**`, `Associates a user's ROBLOX account with their Discord account through verification procedures.`)
       .addField(`**\`${prefix}view username1\`**`, `Views ${xpName} information about the given username (\`username1\`).`)
-      .addField(`**\`${prefix}prefix\`**`, `Returns the current prefix set for the guild.`)
+      .addField(`**\`${prefix}prefix\`**`, `Returns the current prefix set for the group.`)
       .addField(`**\`${prefix}commands\`**`, `Displays this menu`)
     await message.author.send(first)
     var second = new Discord.RichEmbed()
@@ -575,7 +575,7 @@ bot.on('message', async message => {
       .setColor(0xffffff)
       .setTitle(`__Crown Commands__`)
       .setDescription(`The following commands can be ran by: *Crown*.`)
-      .addField(`**\`${prefix}setup\`**`, `Sets up the guild with all of the information found in the config.json file (./settings/config.json).`)
+      .addField(`**\`${prefix}setup\`**`, `Sets up the group with all of the information found in the config.json file (./settings/config.json).`)
     await message.author.send(third)
     return undefined;
   }
