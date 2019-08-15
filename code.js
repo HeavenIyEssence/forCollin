@@ -562,6 +562,7 @@ bot.on('message', async message => {
       .addField(`**\`${prefix}verify\`**`, `Associates a user's ROBLOX account with their Discord account through verification procedures.`)
       .addField(`**\`${prefix}profile username1\`**`, `Displays ${xpName} information about the given username (\`username1\`).`)
       .addField(`**\`${prefix}help\`**`, `Displays this menu`)
+      .addField(`**\`${prefix}code\`**`, `Discloses information regarding setup, source, and creator.`)
     await message.author.send(first)
     var second = new Discord.RichEmbed()
       .setColor(0xff6b4a)
