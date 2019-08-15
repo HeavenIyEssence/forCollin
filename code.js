@@ -4,7 +4,6 @@ const groupID = 2835927;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
 const officerRoleE = "Officer";
-const welcomeMessage = "Hi there, subscribe to ReptilionBoy!";
 const maxXP = 100;
 const xpAuditLogChannelID = "574649167159492618";
 const mainChatChannelID = "574653041609932860";
@@ -109,8 +108,7 @@ bot.on('message', async message => {
 
     if (blurb1 === token || blurb2 === token){
       await message.member.addRole(verifiedRole);
-      await message.member.setNickname(`${firstCheck} | ${nicknames2}`);
-      return message.author.send(`${welcomeMessage}`)
+      await message.member.setNickname(`${firstCheck} | ${nicknames2}`)
     }else{
       return message.channel.send(`Sorry ${message.author}, but I couldn't find the code on your blurb or status.`);
     }
