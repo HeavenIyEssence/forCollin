@@ -4,9 +4,9 @@ const groupID = 2835927;
 const bot_token = process.env.botToken;
 const rblxCookie = process.env.rblxCookie;
 const officerRoleE = "Officer";
-const maxXP = 100;
+const maxXP = 20;
 const xpAuditLogChannelID = "0000";
-const mainChatChannelID = "447505683709952000";
+const otherChannelID = "447505683709952000";
 const fireBaseURL = process.env.fireBaseURL;
 const xpName = "xp";
 /* SETTINGS END */
@@ -34,7 +34,7 @@ firebase.initializeApp(firebaseConfig)
 bot.on('ready', () => {
   console.log('Turned on Discord bot');
   bot.user.setActivity(`${bot.users.size} Inzerians!`, { type: 'WATCHING' });
-  bot.channels.get(bot.channels.get(`${mainChatChannelID}`).id).send(`**Resuming processes!** :wave:`)
+  bot.channels.get(bot.channels.get(`${otherChannelID}`).id).send(`**Resuming processes!** :wave:`)
 })
 
 bot.on('message', async message => {
