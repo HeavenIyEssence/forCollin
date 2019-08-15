@@ -573,8 +573,8 @@ bot.on('message', async message => {
     await message.author.send(second)
     var third = new Discord.RichEmbed()
       .setColor(0xffffff)
-      .setTitle(`__Owner Commands__`)
-      .setDescription(`The following commands can be ran by: *owner*.`)
+      .setTitle(`__Crown Commands__`)
+      .setDescription(`The following commands can be ran by: *Crown*.`)
       .addField(`**\`${prefix}setup\`**`, `Sets up the guild with all of the information found in the config.json file (./settings/config.json).`)
     await message.author.send(third)
     return undefined;
